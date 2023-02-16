@@ -1,0 +1,1965 @@
+{
+"status": "ok",
+"meta": {
+"count": 8,
+"page_total": 7,
+"total": 608,
+"limit": 100,
+"page": 7
+},
+"data": {
+"4293801424": {
+"description": "Удачный в целом корабль, сочетавший высокую скорость, неплохое торпедное и очень сильное артиллерийское вооружение. Орудия главного калибра эсминца по мощности и дальности стрельбы превосходили большинство зарубежных аналогов. Существенным недостатком проекта была слабая ПВО.",
+"price_gold": 2350,
+"ship_id_str": "PRSD001",
+"has_demo_profile": false,
+"images": {
+"small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PRSD001_bab33b89c6978cdc1011b430fc1fe71af19ec3f1b9e56a406cbb606853160608.png",
+"large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PRSD001_4813c14eaa885f844a252d5b2f60a30af7556e97cd233d9db5db409443bf4717.png",
+"medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PRSD001_54fba8c988ce8fc40829933e8458035b76703ebf5bc9970b7e4140577a352fa2.png",
+"contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PRSD001_9ced03450de03a32f1ebc4c0b1f11a9c7eabb10640a8fc085230b8d339578127.png"
+},
+"modules": {
+"engine": [
+3863850448
+],
+"torpedo_bomber": [],
+"fighter": [],
+"hull": [
+3863752144
+],
+"artillery": [
+3863981520
+],
+"torpedoes": [
+3863358928
+],
+"fire_control": [
+3863391696
+],
+"flight_control": [],
+"dive_bomber": []
+},
+"modules_tree": {
+"3863358928": {
+"name": "53-39",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 3863358928,
+"type": "Torpedoes",
+"module_id_str": "PRUT411"
+},
+"3863391696": {
+"name": "СУО V мод. 1",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 3863391696,
+"type": "Suo",
+"module_id_str": "PRUS411"
+},
+"3863752144": {
+"name": "Гремящий",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 3863752144,
+"type": "Hull",
+"module_id_str": "PRUH411"
+},
+"3863850448": {
+"name": "ЭУ 48 000 л.с.",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 3863850448,
+"type": "Engine",
+"module_id_str": "PRUE411"
+},
+"3863981520": {
+"name": "130-мм/50 обр. 1936 г. в установке Б-13-IIс",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 3863981520,
+"type": "Artillery",
+"module_id_str": "PRUA411"
+}
+},
+"nation": "ussr",
+"is_premium": true,
+"ship_id": 4293801424,
+"price_credit": 0,
+"default_profile": {
+"engine": {
+"engine_id_str": "PRUE411",
+"max_speed": 37,
+"engine_id": 3863850448
+},
+"torpedo_bomber": null,
+"anti_aircraft": {
+"slots": {
+"0": {
+"distance": -1,
+"avg_damage": 22,
+"caliber": 37,
+"name": "37-мм установка 70-К",
+"guns": 4
+},
+"1": {
+"distance": -1,
+"avg_damage": 7,
+"caliber": 12,
+"name": "12,7-мм ДШК",
+"guns": 2
+},
+"2": {
+"distance": -1,
+"avg_damage": 10,
+"caliber": 12,
+"name": "12,7-мм «Кольт»",
+"guns": 2
+},
+"3": {
+"distance": -1,
+"avg_damage": 4,
+"caliber": 76,
+"name": "76-мм обр. 1935 г. в установке 34-К",
+"guns": 2
+}
+},
+"defense": 34
+},
+"mobility": {
+"rudder_time": 2.7,
+"total": 69,
+"turning_radius": 550,
+"max_speed": 37
+},
+"hull": {
+"hull_id": 3863752144,
+"hull_id_str": "PRUH411",
+"torpedoes_barrels": 2,
+"anti_aircraft_barrels": 10,
+"range": {
+"max": 19,
+"min": 10
+},
+"health": 13100,
+"planes_amount": null,
+"artillery_barrels": 4,
+"atba_barrels": 0
+},
+"atbas": null,
+"artillery": {
+"max_dispersion": 104,
+"shells": {
+"AP": {
+"burn_probability": null,
+"bullet_speed": 870,
+"name": "ПБ-46",
+"damage": 2500,
+"bullet_mass": 34,
+"type": "AP"
+},
+"HE": {
+"burn_probability": 9,
+"bullet_speed": 870,
+"name": "ОФ-46",
+"damage": 1900,
+"bullet_mass": 33,
+"type": "HE"
+}
+},
+"shot_delay": 5,
+"rotation_time": 36,
+"distance": 11.9,
+"artillery_id": 3863981520,
+"artillery_id_str": "PRUA411",
+"slots": {
+"0": {
+"barrels": 1,
+"name": "130-мм/50 обр. 1936 г. в установке Б-13-IIс",
+"guns": 4
+}
+},
+"gun_rate": 12
+},
+"torpedoes": {
+"visibility_dist": 1.1,
+"distance": 8,
+"torpedoes_id": 3863358928,
+"torpedo_name": "53-39",
+"reload_time": 69,
+"torpedo_speed": 55,
+"rotation_time": 7.2,
+"torpedoes_id_str": "PRUT411",
+"slots": {
+"0": {
+"barrels": 3,
+"caliber": 533,
+"name": "533-мм 3-трубный 39-Ю",
+"guns": 2
+}
+},
+"max_damage": 14400
+},
+"fighters": null,
+"fire_control": {
+"fire_control_id": 3863391696,
+"distance": 11.9,
+"distance_increase": 0,
+"fire_control_id_str": "PRUS411"
+},
+"weaponry": {
+"anti_aircraft": 34,
+"aircraft": 0,
+"artillery": 27,
+"torpedoes": 15
+},
+"battle_level_range_max": 7,
+"battle_level_range_min": 5,
+"flight_control": null,
+"concealment": {
+"total": 92,
+"detect_distance_by_plane": 2.9,
+"detect_distance_by_ship": 6.8
+},
+"armour": {
+"casemate": {
+"max": -1,
+"min": -1
+},
+"flood_prob": 0,
+"deck": {
+"max": -1,
+"min": -1
+},
+"flood_damage": 0,
+"range": {
+"max": 19,
+"min": 10
+},
+"health": 13100,
+"extremities": {
+"max": -1,
+"min": -1
+},
+"total": 20,
+"citadel": {
+"max": -1,
+"min": -1
+}
+},
+"dive_bomber": null
+},
+"upgrades": [
+4273131440,
+4259499952,
+4260548528,
+4261597104,
+4262645680,
+4287811504,
+4220702640,
+4275228592
+],
+"tier": 5,
+"next_ships": {},
+"mod_slots": 3,
+"type": "Destroyer",
+"is_special": false,
+"name": "Гремящий"
+},
+"4293801680": {
+"description": "Небольшой и сравнительно быстроходный эскадренный миноносец. Для своих размеров имел достаточно мощное торпедное вооружение. Артиллерия корабля состояла из нескольких скорострельных малокалиберных орудий.",
+"price_gold": 950,
+"ship_id_str": "PJSD001",
+"has_demo_profile": false,
+"images": {
+"small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PJSD001_1998f44b5aab7fa5c3a229028caec8cf1e042e1586f3e11c1d3d6e57cf17f18d.png",
+"large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PJSD001_69bcdde607f0ef42dff7cc24eb600426154331f264b4851bb5d80bcb35912dcc.png",
+"medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PJSD001_9399e4fff0b317eeafd0094de672243533075d8a8b95dfca2d9194049ea7627c.png",
+"contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PJSD001_d63454e57b24c50e48c0dc8be04d61d2be78dc744a03ffbdc78aa58a7902a5c2.png"
+},
+"modules": {
+"engine": [
+4187860688
+],
+"torpedo_bomber": [],
+"fighter": [],
+"hull": [
+4188810960
+],
+"artillery": [
+4282363600
+],
+"torpedoes": [
+4183174864
+],
+"fire_control": [
+4186353360
+],
+"flight_control": [],
+"dive_bomber": []
+},
+"modules_tree": {
+"4183174864": {
+"name": "Ho Type42",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4183174864,
+"type": "Torpedoes",
+"module_id_str": "PJUT106"
+},
+"4186353360": {
+"name": "Type2 mod. 1",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4186353360,
+"type": "Suo",
+"module_id_str": "PJUS103"
+},
+"4187860688": {
+"name": "ЭУ 9 500 л.с.",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4187860688,
+"type": "Engine",
+"module_id_str": "PJUE102"
+},
+"4188810960": {
+"name": "Tachibana",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4188810960,
+"type": "Hull",
+"module_id_str": "PJUH101"
+},
+"4282363600": {
+"name": "76-мм/40 41st Year Type в одиночной установке",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4282363600,
+"type": "Artillery",
+"module_id_str": "PJUA012"
+}
+},
+"nation": "japan",
+"is_premium": true,
+"ship_id": 4293801680,
+"price_credit": 0,
+"default_profile": {
+"engine": {
+"engine_id_str": "PJUE102",
+"max_speed": 30,
+"engine_id": 4187860688
+},
+"torpedo_bomber": null,
+"anti_aircraft": null,
+"mobility": {
+"rudder_time": 1.9,
+"total": 56,
+"turning_radius": 450,
+"max_speed": 30
+},
+"hull": {
+"hull_id": 4188810960,
+"hull_id_str": "PJUH101",
+"torpedoes_barrels": 2,
+"anti_aircraft_barrels": 0,
+"range": {
+"max": 6,
+"min": 6
+},
+"health": 7000,
+"planes_amount": null,
+"artillery_barrels": 5,
+"atba_barrels": 0
+},
+"atbas": null,
+"artillery": {
+"max_dispersion": 75,
+"shells": {
+"AP": {
+"burn_probability": null,
+"bullet_speed": 690,
+"name": "76-мм AP Type0",
+"damage": 1000,
+"bullet_mass": 7,
+"type": "AP"
+},
+"HE": {
+"burn_probability": 6,
+"bullet_speed": 680,
+"name": "76-мм HE Mk2",
+"damage": 1300,
+"bullet_mass": 6,
+"type": "HE"
+}
+},
+"shot_delay": 5,
+"rotation_time": 16.36,
+"distance": 8,
+"artillery_id": 4282363600,
+"artillery_id_str": "PJUA012",
+"slots": {
+"0": {
+"barrels": 1,
+"name": "76-мм/40 41st Year Type в одиночной установке",
+"guns": 5
+}
+},
+"gun_rate": 12
+},
+"torpedoes": {
+"visibility_dist": 1,
+"distance": 5,
+"torpedoes_id": 4183174864,
+"torpedo_name": "Type42 mod. 1",
+"reload_time": 22,
+"torpedo_speed": 44,
+"rotation_time": 7.2,
+"torpedoes_id_str": "PJUT106",
+"slots": {
+"0": {
+"barrels": 2,
+"caliber": 457,
+"name": "457-мм 2-трубный",
+"guns": 2
+}
+},
+"max_damage": 6133
+},
+"fighters": null,
+"fire_control": {
+"fire_control_id": 4186353360,
+"distance": 8,
+"distance_increase": 0,
+"fire_control_id_str": "PJUS103"
+},
+"weaponry": {
+"anti_aircraft": 0,
+"aircraft": 0,
+"artillery": 2,
+"torpedoes": 4
+},
+"battle_level_range_max": 3,
+"battle_level_range_min": 2,
+"flight_control": null,
+"concealment": {
+"total": 99,
+"detect_distance_by_plane": 1.9,
+"detect_distance_by_ship": 5.2
+},
+"armour": {
+"casemate": {
+"max": -1,
+"min": -1
+},
+"flood_prob": 0,
+"deck": {
+"max": -1,
+"min": -1
+},
+"flood_damage": 0,
+"range": {
+"max": 6,
+"min": 6
+},
+"health": 7000,
+"extremities": {
+"max": -1,
+"min": -1
+},
+"total": 8,
+"citadel": {
+"max": -1,
+"min": -1
+}
+},
+"dive_bomber": null
+},
+"upgrades": [
+4262645680,
+4260548528
+],
+"tier": 2,
+"next_ships": {},
+"mod_slots": 1,
+"type": "Destroyer",
+"is_special": false,
+"name": "Tachibana"
+},
+"4293834192": {
+"description": "Последний корабль в серии бронепалубных крейсеров типа «Паллада». Заметно проигрывал в скорости современным ему кораблям того же класса. В ходе модернизации получил существенно усиленное вооружение. Это позволило ему превзойти по артиллерийской мощи крейсеры с аналогичным водоизмещением периода Первой мировой войны.",
+"price_gold": 2250,
+"ship_id_str": "PRSC001",
+"has_demo_profile": false,
+"images": {
+"small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PRSC001_434c90a92f7066724d017c97feb2e811974eff84e00477f3e464d37c41a2cffb.png",
+"large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PRSC001_ca906a0980743c8d58f255a02bee0948e4a713a31a5e3804bccde90cc14f9819.png",
+"medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PRSC001_6a7b82679f8aa5650dd2eb449b6787a1d21bd9e00fc7402a569bf8e8f7cf2861.png",
+"contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PRSC001_9c1404b90cf0791525585ad64e6ecb07d405a6b535b5c8654f411906571cace1.png"
+},
+"modules": {
+"engine": [
+4293766608
+],
+"torpedo_bomber": [],
+"fighter": [],
+"hull": [
+4293668304
+],
+"artillery": [
+4293897680
+],
+"torpedoes": [],
+"fire_control": [
+4083592656
+],
+"flight_control": [],
+"dive_bomber": []
+},
+"modules_tree": {
+"4083592656": {
+"name": "СУО III мод. 1",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4083592656,
+"type": "Suo",
+"module_id_str": "PRUS201"
+},
+"4293668304": {
+"name": "Аврора",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4293668304,
+"type": "Hull",
+"module_id_str": "PRUH001"
+},
+"4293766608": {
+"name": "ЭУ 12 000 л.с.",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4293766608,
+"type": "Engine",
+"module_id_str": "PRUE001"
+},
+"4293897680": {
+"name": "152-мм/45 обр. 1892 г. на станке Канэ",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4293897680,
+"type": "Artillery",
+"module_id_str": "PRUA001"
+}
+},
+"nation": "ussr",
+"is_premium": true,
+"ship_id": 4293834192,
+"price_credit": 0,
+"default_profile": {
+"engine": {
+"engine_id_str": "PRUE001",
+"max_speed": 19,
+"engine_id": 4293766608
+},
+"torpedo_bomber": null,
+"anti_aircraft": {
+"slots": {
+"0": {
+"distance": -1,
+"avg_damage": 9,
+"caliber": 76,
+"name": "76,2-мм обр. 1914/15 г. на зенитном станке",
+"guns": 6
+}
+},
+"defense": 13
+},
+"mobility": {
+"rudder_time": 6.4,
+"total": 30,
+"turning_radius": 410,
+"max_speed": 19
+},
+"hull": {
+"hull_id": 4293668304,
+"hull_id_str": "PRUH001",
+"torpedoes_barrels": 0,
+"anti_aircraft_barrels": 6,
+"range": {
+"max": 152,
+"min": 6
+},
+"health": 22500,
+"planes_amount": null,
+"artillery_barrels": 14,
+"atba_barrels": 0
+},
+"atbas": null,
+"artillery": {
+"max_dispersion": 99,
+"shells": {
+"AP": {
+"burn_probability": null,
+"bullet_speed": 793,
+"name": "152-мм ББ 91 фн.",
+"damage": 2700,
+"bullet_mass": 41,
+"type": "AP"
+},
+"HE": {
+"burn_probability": 8,
+"bullet_speed": 753,
+"name": "152-мм ОФ 109 фн.",
+"damage": 2100,
+"bullet_mass": 50,
+"type": "HE"
+}
+},
+"shot_delay": 8,
+"rotation_time": 32.73,
+"distance": 11.2,
+"artillery_id": 4293897680,
+"artillery_id_str": "PRUA001",
+"slots": {
+"0": {
+"barrels": 1,
+"name": "152-мм/45 обр. 1892 г. на станке Канэ",
+"guns": 14
+}
+},
+"gun_rate": 7
+},
+"torpedoes": null,
+"fighters": null,
+"fire_control": {
+"fire_control_id": 4083592656,
+"distance": 11.2,
+"distance_increase": 0,
+"fire_control_id_str": "PRUS201"
+},
+"weaponry": {
+"anti_aircraft": 13,
+"aircraft": 0,
+"artillery": 23,
+"torpedoes": 0
+},
+"battle_level_range_max": 4,
+"battle_level_range_min": 3,
+"flight_control": null,
+"concealment": {
+"total": 72,
+"detect_distance_by_plane": 4.4,
+"detect_distance_by_ship": 10.3
+},
+"armour": {
+"casemate": {
+"max": -1,
+"min": -1
+},
+"flood_prob": 0,
+"deck": {
+"max": -1,
+"min": -1
+},
+"flood_damage": 0,
+"range": {
+"max": 152,
+"min": 6
+},
+"health": 22500,
+"extremities": {
+"max": -1,
+"min": -1
+},
+"total": 26,
+"citadel": {
+"max": -1,
+"min": -1
+}
+},
+"dive_bomber": null
+},
+"upgrades": [
+4261597104,
+4262645680,
+4273131440,
+4260548528
+],
+"tier": 3,
+"next_ships": {},
+"mod_slots": 2,
+"type": "Cruiser",
+"is_special": false,
+"name": "Аврора"
+},
+"4293834544": {
+"description": "Крупная бронированная канонерская лодка, способная действовать в открытом море и предназначавшаяся для колониальной службы. Имела достаточно мощное вооружение и очень высокую для своего класса скорость.",
+"price_gold": 0,
+"ship_id_str": "PGSC001",
+"has_demo_profile": false,
+"images": {
+"small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PGSC001_14099708b79bc1fd1442376ae808df4af10a51a1c0b7b6e676722cdc2dcaaa0e.png",
+"large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PGSC001_71586fb6561f62ae7d090b4e92a5d4c24d10671038e140ed359b668e88946b1f.png",
+"medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PGSC001_400bd45fef20f20ab6ed4f3df40d8c81ec87724d5f7822a9b1b019c26665d7a5.png",
+"contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PGSC001_e5ad0f3f2e9466f36deb5abd81b37859f2fa60d402abedf8011fd9ad8f2e397f.png"
+},
+"modules": {
+"engine": [
+4293766960
+],
+"torpedo_bomber": [],
+"fighter": [],
+"hull": [
+4293668656
+],
+"artillery": [
+4293898032
+],
+"torpedoes": [],
+"fire_control": [
+4293308208
+],
+"flight_control": [],
+"dive_bomber": []
+},
+"modules_tree": {
+"4293308208": {
+"name": "FKS Typ 1 Mod. 1",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4293308208,
+"type": "Suo",
+"module_id_str": "PGUS001"
+},
+"4293668656": {
+"name": "Hermelin (A)",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": [
+4292785968
+],
+"module_id": 4293668656,
+"type": "Hull",
+"module_id_str": "PGUH001"
+},
+"4293766960": {
+"name": "ЭУ 15 000 л.с.",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4293766960,
+"type": "Engine",
+"module_id_str": "PGUE001"
+},
+"4293898032": {
+"name": "128-мм/61 SK C/42 в башенной установке",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4293898032,
+"type": "Artillery",
+"module_id_str": "PGUA001"
+}
+},
+"nation": "germany",
+"is_premium": false,
+"ship_id": 4293834544,
+"price_credit": 0,
+"default_profile": {
+"engine": {
+"engine_id_str": "PGUE001",
+"max_speed": 24,
+"engine_id": 4293766960
+},
+"torpedo_bomber": null,
+"anti_aircraft": {
+"slots": {
+"0": {
+"distance": -1,
+"avg_damage": 0,
+"caliber": 20,
+"name": "20-мм/65 C/38 в спаренной установке",
+"guns": 2
+},
+"1": {
+"distance": -1,
+"avg_damage": 0,
+"caliber": 37,
+"name": "37-мм/83 SK C/30 в установке Dopp LC/30",
+"guns": 3
+},
+"2": {
+"distance": -1,
+"avg_damage": 2,
+"caliber": 128,
+"name": "128-мм/61 SK C/42 в башенной установке",
+"guns": 2
+}
+},
+"defense": 12
+},
+"mobility": {
+"rudder_time": 3.3,
+"total": 43,
+"turning_radius": 360,
+"max_speed": 24
+},
+"hull": {
+"hull_id": 4293668656,
+"hull_id_str": "PGUH001",
+"torpedoes_barrels": 0,
+"anti_aircraft_barrels": 7,
+"range": {
+"max": 50,
+"min": 6
+},
+"health": 4500,
+"planes_amount": null,
+"artillery_barrels": 2,
+"atba_barrels": 0
+},
+"atbas": null,
+"artillery": {
+"max_dispersion": 88,
+"shells": {
+"HE": {
+"burn_probability": 5,
+"bullet_speed": 900,
+"name": "128-мм Spr.Gr. L/4.5",
+"damage": 900,
+"bullet_mass": 26,
+"type": "HE"
+}
+},
+"shot_delay": 4,
+"rotation_time": 18,
+"distance": 9.9,
+"artillery_id": 4293898032,
+"artillery_id_str": "PGUA001",
+"slots": {
+"0": {
+"barrels": 2,
+"name": "128-мм/61 SK C/42 в башенной установке",
+"guns": 2
+}
+},
+"gun_rate": 15
+},
+"torpedoes": null,
+"fighters": null,
+"fire_control": {
+"fire_control_id": 4293308208,
+"distance": 9.9,
+"distance_increase": 0,
+"fire_control_id_str": "PGUS001"
+},
+"weaponry": {
+"anti_aircraft": 12,
+"aircraft": 0,
+"artillery": 1,
+"torpedoes": 0
+},
+"battle_level_range_max": 1,
+"battle_level_range_min": 1,
+"flight_control": null,
+"concealment": {
+"total": 76,
+"detect_distance_by_plane": 6.7,
+"detect_distance_by_ship": 8.4
+},
+"armour": {
+"casemate": {
+"max": -1,
+"min": -1
+},
+"flood_prob": 0,
+"deck": {
+"max": -1,
+"min": -1
+},
+"flood_damage": 0,
+"range": {
+"max": 50,
+"min": 6
+},
+"health": 4500,
+"extremities": {
+"max": -1,
+"min": -1
+},
+"total": 4,
+"citadel": {
+"max": -1,
+"min": -1
+}
+},
+"dive_bomber": null
+},
+"upgrades": [
+4261597104,
+4262645680,
+4260548528
+],
+"tier": 1,
+"next_ships": {
+"4292785968": 350
+},
+"mod_slots": 1,
+"type": "Cruiser",
+"is_special": false,
+"name": "Hermelin"
+},
+"4293834736": {
+"description": "Канонерские лодки типа Erie проектировались как небольшие универсальные корабли с широким кругом задач — от артиллерийской поддержки десантных операций до защиты конвоев. Для своего размера были хорошо бронированы и вооружены. Первые из кораблей ВМС США, получившие зенитные автоматы.",
+"price_gold": 0,
+"ship_id_str": "PASC001",
+"has_demo_profile": false,
+"images": {
+"small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PASC001_ade92dc58a7fb61bdf43dc04baf0f16916ae76371b427930a833b0e0852fbc38.png",
+"large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PASC001_01ebf7ea634445cada12ed8d0140f98caa034eda276e9db9db5ccf344853e858.png",
+"medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PASC001_bd544f2431ad2e295deaef966f98d676255778540de013ed4235a1c19f9ca582.png",
+"contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PASC001_8b9073c769339b9014ad9832e8a64227bdda75b202dc49f865beba4bcfb69e88.png"
+},
+"modules": {
+"engine": [
+4293767152
+],
+"torpedo_bomber": [],
+"fighter": [],
+"hull": [
+4293668848
+],
+"artillery": [
+4292849648
+],
+"torpedoes": [],
+"fire_control": [
+4293308400
+],
+"flight_control": [],
+"dive_bomber": []
+},
+"modules_tree": {
+"4292849648": {
+"name": "152-мм/47 Mk.17 в установке Mk.18",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4292849648,
+"type": "Artillery",
+"module_id_str": "PAUA002"
+},
+"4293308400": {
+"name": "Mk1 mod. 1",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4293308400,
+"type": "Suo",
+"module_id_str": "PAUS001"
+},
+"4293668848": {
+"name": "Erie (A)",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": [
+4292786160
+],
+"module_id": 4293668848,
+"type": "Hull",
+"module_id_str": "PAUH001"
+},
+"4293767152": {
+"name": "ЭУ 6 200 л.с.",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 4293767152,
+"type": "Engine",
+"module_id_str": "PAUE001"
+}
+},
+"nation": "usa",
+"is_premium": false,
+"ship_id": 4293834736,
+"price_credit": 0,
+"default_profile": {
+"engine": {
+"engine_id_str": "PAUE001",
+"max_speed": 20,
+"engine_id": 4293767152
+},
+"torpedo_bomber": null,
+"anti_aircraft": {
+"slots": {
+"0": {
+"distance": -1,
+"avg_damage": 2,
+"caliber": 28,
+"name": "28-мм Mk.1 в установке Mk.2",
+"guns": 4
+}
+},
+"defense": 5
+},
+"mobility": {
+"rudder_time": 2.8,
+"total": 35,
+"turning_radius": 310,
+"max_speed": 20
+},
+"hull": {
+"hull_id": 4293668848,
+"hull_id_str": "PAUH001",
+"torpedoes_barrels": 0,
+"anti_aircraft_barrels": 4,
+"range": {
+"max": 88,
+"min": 6
+},
+"health": 4950,
+"planes_amount": null,
+"artillery_barrels": 4,
+"atba_barrels": 0
+},
+"atbas": null,
+"artillery": {
+"max_dispersion": 86,
+"shells": {
+"HE": {
+"burn_probability": 12,
+"bullet_speed": 853,
+"name": "152-мм HE/HC Mk34T",
+"damage": 1100,
+"bullet_mass": 48,
+"type": "HE"
+}
+},
+"shot_delay": 6,
+"rotation_time": 20,
+"distance": 9.6,
+"artillery_id": 4292849648,
+"artillery_id_str": "PAUA002",
+"slots": {
+"0": {
+"barrels": 1,
+"name": "152-мм/47 Mk.17 в установке Mk.18",
+"guns": 4
+}
+},
+"gun_rate": 10
+},
+"torpedoes": null,
+"fighters": null,
+"fire_control": {
+"fire_control_id": 4293308400,
+"distance": 9.6,
+"distance_increase": 0,
+"fire_control_id_str": "PAUS001"
+},
+"weaponry": {
+"anti_aircraft": 5,
+"aircraft": 0,
+"artillery": 1,
+"torpedoes": 0
+},
+"battle_level_range_max": 1,
+"battle_level_range_min": 1,
+"flight_control": null,
+"concealment": {
+"total": 82,
+"detect_distance_by_plane": 4.7,
+"detect_distance_by_ship": 8
+},
+"armour": {
+"casemate": {
+"max": -1,
+"min": -1
+},
+"flood_prob": 0,
+"deck": {
+"max": -1,
+"min": -1
+},
+"flood_damage": 0,
+"range": {
+"max": 88,
+"min": 6
+},
+"health": 4950,
+"extremities": {
+"max": -1,
+"min": -1
+},
+"total": 4,
+"citadel": {
+"max": -1,
+"min": -1
+}
+},
+"dive_bomber": null
+},
+"upgrades": [
+4261597104,
+4262645680,
+4260548528
+],
+"tier": 1,
+"next_ships": {
+"4292786160": 350
+},
+"mod_slots": 1,
+"type": "Cruiser",
+"is_special": false,
+"name": "Erie"
+},
+"4293866960": {
+"description": "Последний линейный корабль, заложенный для Российского императорского флота. Являлся развитием линкоров типа «Императрица Мария», сохранил высокую огневую мощь предшественников. Накопленный при строительстве первых российских дредноутов опыт помог заметно усилить бронирование, организованное по усовершенствованной схеме.",
+"price_gold": 2800,
+"ship_id_str": "PRSB001",
+"has_demo_profile": false,
+"images": {
+"small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PRSB001_4579e7d96220de23d97a0f36ff8e1deb462fe30eefca7e225267fe84b3dbd10b.png",
+"large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PRSB001_b72b2ae9a78443769c8edd6eff439d94c86229022661a149cf5cc3d3fe806530.png",
+"medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PRSB001_4c062ded338182049c6669e5ce31ff3ac7c87dd5299672a14b635e9d081972c4.png",
+"contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PRSB001_db996ea08cf7adc8a326830ab3cc16ad21d03c346ef7b9f29df32d307b77615a.png"
+},
+"modules": {
+"engine": [
+3842878928
+],
+"torpedo_bomber": [],
+"fighter": [],
+"hull": [
+3842780624
+],
+"artillery": [
+3843010000
+],
+"torpedoes": [],
+"fire_control": [
+3842420176
+],
+"flight_control": [],
+"dive_bomber": []
+},
+"modules_tree": {
+"3842420176": {
+"name": "СУО IV мод. 1",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 3842420176,
+"type": "Suo",
+"module_id_str": "PRUS431"
+},
+"3842780624": {
+"name": "Император Николай I",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 3842780624,
+"type": "Hull",
+"module_id_str": "PRUH431"
+},
+"3842878928": {
+"name": "ЭУ 30 000 л.с.",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 3842878928,
+"type": "Engine",
+"module_id_str": "PRUE431"
+},
+"3843010000": {
+"name": "305-мм/52 обр. 1907 г. в башне Металлического з-да",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 0,
+"next_ships": null,
+"module_id": 3843010000,
+"type": "Artillery",
+"module_id_str": "PRUA431"
+}
+},
+"nation": "ussr",
+"is_premium": true,
+"ship_id": 4293866960,
+"price_credit": 0,
+"default_profile": {
+"engine": {
+"engine_id_str": "PRUE431",
+"max_speed": 21,
+"engine_id": 3842878928
+},
+"torpedo_bomber": null,
+"anti_aircraft": {
+"slots": {
+"0": {
+"distance": -1,
+"avg_damage": 6,
+"caliber": 7,
+"name": "7,62-мм «Максим»",
+"guns": 4
+},
+"1": {
+"distance": -1,
+"avg_damage": 2,
+"caliber": 63,
+"name": "63-мм обр. 1916 г.",
+"guns": 2
+}
+},
+"defense": 9
+},
+"mobility": {
+"rudder_time": 12.8,
+"total": 27,
+"turning_radius": 660,
+"max_speed": 21
+},
+"hull": {
+"hull_id": 3842780624,
+"hull_id_str": "PRUH431",
+"torpedoes_barrels": 0,
+"anti_aircraft_barrels": 6,
+"range": {
+"max": 400,
+"min": 13
+},
+"health": 44800,
+"planes_amount": null,
+"artillery_barrels": 4,
+"atba_barrels": 20
+},
+"atbas": {
+"distance": 4,
+"slots": {
+"0": {
+"burn_probability": 9,
+"bullet_speed": 823,
+"name": "130-мм ОФ обр. 1911 г.",
+"shot_delay": 12,
+"damage": 1900,
+"bullet_mass": 37,
+"type": "HE",
+"gun_rate": 5
+}
+}
+},
+"artillery": {
+"max_dispersion": 201,
+"shells": {
+"AP": {
+"burn_probability": null,
+"bullet_speed": 762,
+"name": "305-мм ББ обр. 1911 г.",
+"damage": 8600,
+"bullet_mass": 471,
+"type": "AP"
+},
+"HE": {
+"burn_probability": 33,
+"bullet_speed": 762,
+"name": "305-мм ОФ обр. 1911 г.",
+"damage": 4500,
+"bullet_mass": 471,
+"type": "HE"
+}
+},
+"shot_delay": 36,
+"rotation_time": 56.25,
+"distance": 14.1,
+"artillery_id": 3843010000,
+"artillery_id_str": "PRUA431",
+"slots": {
+"0": {
+"barrels": 3,
+"name": "305-мм/52 обр. 1907 г. в башне Металлического з-да",
+"guns": 4
+}
+},
+"gun_rate": 1.7
+},
+"torpedoes": null,
+"fighters": null,
+"fire_control": {
+"fire_control_id": 3842420176,
+"distance": 14.1,
+"distance_increase": 0,
+"fire_control_id_str": "PRUS431"
+},
+"weaponry": {
+"anti_aircraft": 9,
+"aircraft": 0,
+"artillery": 73,
+"torpedoes": 0
+},
+"battle_level_range_max": 5,
+"battle_level_range_min": 4,
+"flight_control": null,
+"concealment": {
+"total": 54,
+"detect_distance_by_plane": 8.3,
+"detect_distance_by_ship": 12.4
+},
+"armour": {
+"casemate": {
+"max": -1,
+"min": -1
+},
+"flood_prob": 13,
+"deck": {
+"max": -1,
+"min": -1
+},
+"flood_damage": 25,
+"range": {
+"max": 400,
+"min": 13
+},
+"health": 44800,
+"extremities": {
+"max": -1,
+"min": -1
+},
+"total": 52,
+"citadel": {
+"max": -1,
+"min": -1
+}
+},
+"dive_bomber": null
+},
+"upgrades": [
+4261597104,
+4262645680,
+4273131440,
+4260548528
+],
+"tier": 4,
+"next_ships": {},
+"mod_slots": 2,
+"type": "Battleship",
+"is_special": false,
+"name": "Император Николай I"
+},
+"4293867216": {
+"description": "Первый японский дредноут. Обладал довольно мощным броневым поясом. Разнообразие калибров многочисленных орудий сильно затрудняло управление огнём. Как и другие корабли своего времени, имел недостаточное горизонтальное бронирование и слабую противоторпедную защиту.",
+"price_gold": 0,
+"ship_id_str": "PJSB001",
+"has_demo_profile": false,
+"images": {
+"small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PJSB001_f99d4a487e2eeda442edfb3eeed0feb5cd260d088d2af632f3a804d9a052fdd3.png",
+"large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PJSB001_70dbceb855c1ca9a83097e77e31715e824963b25840e1191349de3cbbf09ccad.png",
+"medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PJSB001_6e9a16f4ff49255dd49044e1d88006ac08825055aca4b10469e9044f8b9aea50.png",
+"contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PJSB001_955d3784f70997b54d141dcc64cba57991c4fdb3218f2480676edace21cc145c.png"
+},
+"modules": {
+"engine": [
+4083003088,
+4080905936
+],
+"torpedo_bomber": [],
+"fighter": [],
+"hull": [
+4073467600,
+4072419024
+],
+"artillery": [
+4073696976
+],
+"torpedoes": [],
+"fire_control": [
+4073107152,
+4072058576
+],
+"flight_control": [],
+"dive_bomber": []
+},
+"modules_tree": {
+"4072058576": {
+"name": "Type3 mod. 2",
+"next_modules": null,
+"is_default": false,
+"price_xp": 950,
+"price_credit": 80000,
+"next_ships": null,
+"module_id": 4072058576,
+"type": "Suo",
+"module_id_str": "PJUS212"
+},
+"4072419024": {
+"name": "Kawachi (B)",
+"next_modules": null,
+"is_default": false,
+"price_xp": 1400,
+"price_credit": 160000,
+"next_ships": [
+4291770064
+],
+"module_id": 4072419024,
+"type": "Hull",
+"module_id_str": "PJUH212"
+},
+"4073107152": {
+"name": "Type3 mod. 1",
+"next_modules": [
+4072058576
+],
+"is_default": true,
+"price_xp": 0,
+"price_credit": 20000,
+"next_ships": null,
+"module_id": 4073107152,
+"type": "Suo",
+"module_id_str": "PJUS211"
+},
+"4073467600": {
+"name": "Kawachi (A)",
+"next_modules": [
+4072419024
+],
+"is_default": true,
+"price_xp": 0,
+"price_credit": 72000,
+"next_ships": null,
+"module_id": 4073467600,
+"type": "Hull",
+"module_id_str": "PJUH211"
+},
+"4073696976": {
+"name": "305-мм/45 41st Year Type в двухорудийной башне",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 34000,
+"next_ships": null,
+"module_id": 4073696976,
+"type": "Artillery",
+"module_id_str": "PJUA211"
+},
+"4080905936": {
+"name": "ЭУ 22 500 л.с.",
+"next_modules": [
+4083003088
+],
+"is_default": true,
+"price_xp": 0,
+"price_credit": 18000,
+"next_ships": null,
+"module_id": 4080905936,
+"type": "Engine",
+"module_id_str": "PJUE204"
+},
+"4083003088": {
+"name": "ЭУ 27 300 л.с.",
+"next_modules": null,
+"is_default": false,
+"price_xp": 350,
+"price_credit": 40000,
+"next_ships": null,
+"module_id": 4083003088,
+"type": "Engine",
+"module_id_str": "PJUE202"
+}
+},
+"nation": "japan",
+"is_premium": false,
+"ship_id": 4293867216,
+"price_credit": 318000,
+"default_profile": {
+"engine": {
+"engine_id_str": "PJUE204",
+"max_speed": 18.4,
+"engine_id": 4080905936
+},
+"torpedo_bomber": null,
+"anti_aircraft": null,
+"mobility": {
+"rudder_time": 13.4,
+"total": 22,
+"turning_radius": 560,
+"max_speed": 18.4
+},
+"hull": {
+"hull_id": 4073467600,
+"hull_id_str": "PJUH211",
+"torpedoes_barrels": 0,
+"anti_aircraft_barrels": 0,
+"range": {
+"max": 305,
+"min": 10
+},
+"health": 35800,
+"planes_amount": null,
+"artillery_barrels": 6,
+"atba_barrels": 22
+},
+"atbas": {
+"distance": 3.2,
+"slots": {
+"0": {
+"burn_probability": 9,
+"bullet_speed": 825,
+"name": "152-мм HE Type4",
+"shot_delay": 10,
+"damage": 2500,
+"bullet_mass": 45,
+"type": "HE",
+"gun_rate": 6
+},
+"1": {
+"burn_probability": 5,
+"bullet_speed": 680,
+"name": "76-мм HE Mk2",
+"shot_delay": 5,
+"damage": 1300,
+"bullet_mass": 6,
+"type": "HE",
+"gun_rate": 12
+},
+"2": {
+"burn_probability": 10,
+"bullet_speed": 660,
+"name": "120-мм Common Type0 HE",
+"shot_delay": 5,
+"damage": 2100,
+"bullet_mass": 20,
+"type": "HE",
+"gun_rate": 12
+}
+}
+},
+"artillery": {
+"max_dispersion": 155,
+"shells": {
+"AP": {
+"burn_probability": null,
+"bullet_speed": 810,
+"name": "305-мм AP/APC Type41year",
+"damage": 7900,
+"bullet_mass": 386,
+"type": "AP"
+},
+"HE": {
+"burn_probability": 28,
+"bullet_speed": 810,
+"name": "305-мм HE",
+"damage": 5100,
+"bullet_mass": 386,
+"type": "HE"
+}
+},
+"shot_delay": 30,
+"rotation_time": 45,
+"distance": 9.9,
+"artillery_id": 4073696976,
+"artillery_id_str": "PJUA211",
+"slots": {
+"0": {
+"barrels": 2,
+"name": "305-мм/45 41st Year Type в двухорудийной башне",
+"guns": 6
+}
+},
+"gun_rate": 2
+},
+"torpedoes": null,
+"fighters": null,
+"fire_control": {
+"fire_control_id": 4073107152,
+"distance": 9.9,
+"distance_increase": 0,
+"fire_control_id_str": "PJUS211"
+},
+"weaponry": {
+"anti_aircraft": 0,
+"aircraft": 0,
+"artillery": 69,
+"torpedoes": 0
+},
+"battle_level_range_max": 4,
+"battle_level_range_min": 3,
+"flight_control": null,
+"concealment": {
+"total": 72,
+"detect_distance_by_plane": 6.7,
+"detect_distance_by_ship": 9.3
+},
+"armour": {
+"casemate": {
+"max": -1,
+"min": -1
+},
+"flood_prob": 13,
+"deck": {
+"max": -1,
+"min": -1
+},
+"flood_damage": 25,
+"range": {
+"max": 305,
+"min": 10
+},
+"health": 35800,
+"extremities": {
+"max": -1,
+"min": -1
+},
+"total": 41,
+"citadel": {
+"max": -1,
+"min": -1
+}
+},
+"dive_bomber": null
+},
+"upgrades": [
+4261597104,
+4262645680,
+4273131440,
+4260548528
+],
+"tier": 3,
+"next_ships": {
+"4291770064": 6700
+},
+"mod_slots": 2,
+"type": "Battleship",
+"is_special": false,
+"name": "Kawachi"
+},
+"4293867504": {
+"description": "Первый дредноут ВМС США. Из-за ограниченных размеров был сравнительно слабо вооружён и тихоходен. На линкорах этого типа была впервые применена линейно-возвышенная схема размещения орудийных башен. Это позволяло всей артиллерии главного калибра участвовать в бортовом залпе.",
+"price_gold": 0,
+"ship_id_str": "PASB001",
+"has_demo_profile": false,
+"images": {
+"small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PASB001_a9ac93ce54f839a639eacc67b81ea5d374e2f514883b8dcd8f4addeb868bad22.png",
+"large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PASB001_c48f8a9f269a6c39a61543e9693fb2985296f17a37eb957ae6e0f9fe63083066.png",
+"medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PASB001_55b51e62925fe75c4fb319458c5216c76f02ebf3b9d6d70d8f7af0847ae0e7d8.png",
+"contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PASB001_f0eed2a8b336248a443d25e4bfbc8adc4a5a80b3e28cf990d50c8286e2b9e29c.png"
+},
+"modules": {
+"engine": [
+4063080432,
+4062031856
+],
+"torpedo_bomber": [],
+"fighter": [],
+"hull": [
+4061933552,
+4062982128
+],
+"artillery": [
+4063211504
+],
+"torpedoes": [],
+"fire_control": [
+4051087344,
+4052135920
+],
+"flight_control": [],
+"dive_bomber": []
+},
+"modules_tree": {
+"4051087344": {
+"name": "Mk III mod. 2",
+"next_modules": null,
+"is_default": false,
+"price_xp": 700,
+"price_credit": 76000,
+"next_ships": null,
+"module_id": 4051087344,
+"type": "Suo",
+"module_id_str": "PAUS232"
+},
+"4052135920": {
+"name": "Mk III mod. 1",
+"next_modules": [
+4051087344
+],
+"is_default": true,
+"price_xp": 0,
+"price_credit": 22000,
+"next_ships": null,
+"module_id": 4052135920,
+"type": "Suo",
+"module_id_str": "PAUS231"
+},
+"4061933552": {
+"name": "South Carolina (B)",
+"next_modules": null,
+"is_default": false,
+"price_xp": 1400,
+"price_credit": 150000,
+"next_ships": [
+4290721776
+],
+"module_id": 4061933552,
+"type": "Hull",
+"module_id_str": "PAUH222"
+},
+"4062031856": {
+"name": "ЭУ 16 000 л.с.",
+"next_modules": [
+4063080432
+],
+"is_default": true,
+"price_xp": 0,
+"price_credit": 17000,
+"next_ships": null,
+"module_id": 4062031856,
+"type": "Engine",
+"module_id_str": "PAUE222"
+},
+"4062982128": {
+"name": "South Carolina (A)",
+"next_modules": [
+4061933552
+],
+"is_default": true,
+"price_xp": 0,
+"price_credit": 70000,
+"next_ships": null,
+"module_id": 4062982128,
+"type": "Hull",
+"module_id_str": "PAUH221"
+},
+"4063080432": {
+"name": "ЭУ 17 600 л.с.",
+"next_modules": null,
+"is_default": false,
+"price_xp": 300,
+"price_credit": 40000,
+"next_ships": null,
+"module_id": 4063080432,
+"type": "Engine",
+"module_id_str": "PAUE221"
+},
+"4063211504": {
+"name": "305-мм/45 Mk.5 в башенной установке",
+"next_modules": null,
+"is_default": true,
+"price_xp": 0,
+"price_credit": 36000,
+"next_ships": null,
+"module_id": 4063211504,
+"type": "Artillery",
+"module_id_str": "PAUA221"
+}
+},
+"nation": "usa",
+"is_premium": false,
+"ship_id": 4293867504,
+"price_credit": 309000,
+"default_profile": {
+"engine": {
+"engine_id_str": "PAUE222",
+"max_speed": 15.8,
+"engine_id": 4062031856
+},
+"torpedo_bomber": null,
+"anti_aircraft": null,
+"mobility": {
+"rudder_time": 13.1,
+"total": 18,
+"turning_radius": 480,
+"max_speed": 15.8
+},
+"hull": {
+"hull_id": 4062982128,
+"hull_id_str": "PAUH221",
+"torpedoes_barrels": 0,
+"anti_aircraft_barrels": 0,
+"range": {
+"max": 305,
+"min": 10
+},
+"health": 29000,
+"planes_amount": null,
+"artillery_barrels": 4,
+"atba_barrels": 22
+},
+"atbas": {
+"distance": 3.2,
+"slots": {
+"0": {
+"burn_probability": 4,
+"bullet_speed": 823,
+"name": "76-мм HE",
+"shot_delay": 6,
+"damage": 1100,
+"bullet_mass": 6,
+"type": "HE",
+"gun_rate": 10
+}
+}
+},
+"artillery": {
+"max_dispersion": 202,
+"shells": {
+"AP": {
+"burn_probability": null,
+"bullet_speed": 823,
+"name": "305-мм AP",
+"damage": 8100,
+"bullet_mass": 395,
+"type": "AP"
+},
+"HE": {
+"burn_probability": 20,
+"bullet_speed": 823,
+"name": "305-мм HE",
+"damage": 4100,
+"bullet_mass": 395,
+"type": "HE"
+}
+},
+"shot_delay": 30,
+"rotation_time": 45,
+"distance": 14.2,
+"artillery_id": 4063211504,
+"artillery_id_str": "PAUA221",
+"slots": {
+"0": {
+"barrels": 2,
+"name": "305-мм/45 Mk.5 в башенной установке",
+"guns": 4
+}
+},
+"gun_rate": 2
+},
+"torpedoes": null,
+"fighters": null,
+"fire_control": {
+"fire_control_id": 4052135920,
+"distance": 14.2,
+"distance_increase": 0,
+"fire_control_id_str": "PAUS231"
+},
+"weaponry": {
+"anti_aircraft": 0,
+"aircraft": 0,
+"artillery": 73,
+"torpedoes": 0
+},
+"battle_level_range_max": 4,
+"battle_level_range_min": 3,
+"flight_control": null,
+"concealment": {
+"total": 54,
+"detect_distance_by_plane": 6,
+"detect_distance_by_ship": 13.4
+},
+"armour": {
+"casemate": {
+"max": -1,
+"min": -1
+},
+"flood_prob": 19,
+"deck": {
+"max": -1,
+"min": -1
+},
+"flood_damage": 25,
+"range": {
+"max": 305,
+"min": 10
+},
+"health": 29000,
+"extremities": {
+"max": -1,
+"min": -1
+},
+"total": 33,
+"citadel": {
+"max": -1,
+"min": -1
+}
+},
+"dive_bomber": null
+},
+"upgrades": [
+4261597104,
+4262645680,
+4273131440,
+4260548528
+],
+"tier": 3,
+"next_ships": {
+"4290721776": 7200
+},
+"mod_slots": 2,
+"type": "Battleship",
+"is_special": false,
+"name": "South Carolina"
+}
+}
+}

@@ -1,0 +1,26 @@
+<h3>Raise the anchor! Battleship's plotting its course!</h3>
+<form [formGroup]="form">
+  <!-- <mat-form-field> -->
+     <input matInput formControlName="nation" placeholder="Введите название..."><br/>
+     <input matInput formControlName="level" placeholder="Введите уровень..."><br/>
+     <!-- <mat-error *ngIf="form.controls.param.errors?.required">Text is required</mat-error> -->
+     <button class="btn btn-primary" (click)="onClickLoadShipList()">Load ship list</button>
+  <!-- </mat-form-field> -->
+</form>  
+
+<!--
+<div>
+   <input type="text" class="form-control" [(ngModel)]="targetNation" (input)="onUpdateTargetNation($event)">
+   <button class="btn btn-primary" (click)="onClickLoadShipList()" [disabled]="!allowFindShip">Load ship list</button>
+</div>
+<hr/>
+<p>{{ shipHeader }}</p>
+-->
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="list-group-item" *ngFor="let ship of ships">
+      <app-ship [ship]="ship"></app-ship>
+    </div>
+  </div>
+</div>
