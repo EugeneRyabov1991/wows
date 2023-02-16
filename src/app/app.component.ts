@@ -10,7 +10,7 @@ import { Ship } from './ship/ship.model';
 })
 
 export class AppComponent implements OnInit {
-  title = 'WoWS economic adviser';
+  title = 'WoWS economic adviser :)';
   products: any = [];
   Ships: Ship[] = [];
 //  pr$: Observable<any>;
