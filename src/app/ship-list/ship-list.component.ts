@@ -19,13 +19,13 @@ export class ShipsComponent implements OnInit {
 
   constructor(private httpClient: HttpClient,
               private shipListService: ShipListService
-    ) { }
+  ) { }
 
-    // Описание здесь
-    //         https://developers.wargaming.net/
-    //  Текст запроса для поиска кораблей
-    //         https://api.worldofwarships.ru/wows/encyclopedia/ships/?application_id=774e1e9d18a61e9f385584a1d8705404&nation=usa
-    //         http://api.korabli.su/wows/encyclopedia/ships/?application_id=774e1e9d18a61e9f385584a1d8705404&nation=usa
+  // Описание здесь
+  //         https://developers.wargaming.net/
+  //  Текст запроса для поиска кораблей
+  //         https://api.worldofwarships.ru/wows/encyclopedia/ships/?application_id=774e1e9d18a61e9f385584a1d8705404&nation=usa
+  //         https://api.korabli.su/wows/encyclopedia/ships/?application_id=774e1e9d18a61e9f385584a1d8705404&page_no=[1-N]
 
   form: FormGroup;
 
@@ -41,9 +41,10 @@ export class ShipsComponent implements OnInit {
     this.ships = [];
 //    this.httpClient.get('assets/wows.json').subscribe(data => {
     const filter =  {
-        nation: this.form.value.nation,
-        tier:  this.form.value.level,
-      };
+      page_no: 5,
+//        nation: this.form.value.nation,
+//        tier:  this.form.value.level,
+    };
     this.shipListService.getShipList(filter).subscribe(data => {
       this.products = data;
       const jsonContent = data['data'];
@@ -51,24 +52,24 @@ export class ShipsComponent implements OnInit {
       for (const key in jsonContent) {
         if (Object.prototype.hasOwnProperty.call(jsonContent, key)) {
           const element = jsonContent[key];
-          console.log(element['tier'] + ' === ' + filter.tier);
+//          console.log(element['tier'] + ' === ' + filter.tier);
 
-          if (+element['tier'] === +filter.tier) {
-            let newShip: Ship;
-            newShip = new Ship();
-            newShip.id = i;
-            newShip.tier = element['tier'];
-            newShip.name = element['name'];
-            const elementImages = element['images'];
-            newShip.smallImage = elementImages['small'];
-            this.ships.push(newShip);
-            i++;
-          }
+//          if (+element['tier'] === +filter.tier) {
+          let newShip: Ship;
+          newShip = new Ship();
+          newShip.id = i;
+          newShip.tier = element['tier'];
+          newShip.name = element['name'];
+          const elementImages = element['images'];
+          newShip.smallImage = elementImages['small'];
+          this.ships.push(newShip);
+          i++;
+//          }
         }
       }
     });
   }
   onUpdateTargetNation(event: Event) {
-     this.allowFindShip = ((<HTMLInputElement>event.target).value.length > 0);
+    this.allowFindShip = ((<HTMLInputElement>event.target).value.length > 0);
   }
 }

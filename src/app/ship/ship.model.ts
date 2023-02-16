@@ -1,13 +1,13 @@
 export class Ship {
 
-    public id: number;     // ship_id 
-    public code: string;   // ship_id_str
-    public name: string;
-    public type: string;
-    public is_special: boolean;
-    public tier: number;
-    public nation: string;
-    public smallImage: string;
+    public id: number = 0;
+    public code: string = '';
+    public name: string  = '';
+    public type: string = 'BBB';
+    public is_special: boolean = false;
+    public tier: number = 1;
+    public nation: string = 'JPN';
+    public smallImage: string = "";
 
     constructor () {}
 
