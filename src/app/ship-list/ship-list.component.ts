@@ -11,11 +11,13 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class ShipsComponent implements OnInit {
 
+  fltNation = "USSR";
   shipHeader = '';
   targetNation = '';
   allowFindShip = false;
   products: any = [];
   ships: Ship[];
+
 
   constructor(private httpClient: HttpClient,
               private shipListService: ShipListService

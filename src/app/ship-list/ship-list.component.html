@@ -1,10 +1,11 @@
 <h3>Raise the anchor! Battleship's plotting its course!</h3>
 <form [formGroup]="form">
   <!-- <mat-form-field> -->
-     <input matInput formControlName="nation" placeholder="Введите название..."><br/>
+     <input matInput [(ngModel)]="fltNation" formControlName="nation" placeholder="Введите нвцию..."><br/>
      <input matInput formControlName="level" placeholder="Введите уровень..."><br/>
      <!-- <mat-error *ngIf="form.controls.param.errors?.required">Text is required</mat-error> -->
      <button class="btn btn-primary" (click)="onClickLoadShipList()">Load ship list</button>
+  <div>{{this.fltNation}}</div>
   <!-- </mat-form-field> -->
 </form>
 
