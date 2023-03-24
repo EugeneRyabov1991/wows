@@ -16,7 +16,7 @@ export class ShipsComponent implements OnInit {
   targetNation = '';
   allowFindShip = false;
   products: any = [];
-  ships: Ship[];
+  ships: any = [];
 
 
   constructor(private httpClient: HttpClient,
@@ -47,29 +47,36 @@ export class ShipsComponent implements OnInit {
 //        nation: this.form.value.nation,
 //        tier:  this.form.value.level,
     };
-    this.shipListService.getShipList(filter).subscribe(data => {
-      this.products = data;
-      const jsonContent = data['data'];
-      let i = 0;
-      for (const key in jsonContent) {
-        if (Object.prototype.hasOwnProperty.call(jsonContent, key)) {
-          const element = jsonContent[key];
-//          console.log(element['tier'] + ' === ' + filter.tier);
-
-//          if (+element['tier'] === +filter.tier) {
-          let newShip: Ship;
-          newShip = new Ship();
-          newShip.id = i;
-          newShip.tier = element['tier'];
-          newShip.name = element['name'];
-          const elementImages = element['images'];
-          newShip.smallImage = elementImages['small'];
-          this.ships.push(newShip);
-          i++;
-//          }
+    let i = 0;
+    for (let pageNo = 1; pageNo <= 7; pageNo++) {
+      filter.page_no = pageNo;
+      this.shipListService.getShipList(filter).subscribe(data => {
+        this.products = data;
+        const jsonContent = data['data'];
+        for (const key in jsonContent) {
+          if (Object.prototype.hasOwnProperty.call(jsonContent, key)) {
+            const element = jsonContent[key];
+//            let newShip: Ship;
+//            newShip = Object.assign({}, element);
+            let newShip = {
+              'id' : i,
+              ...element,
+            }
+              // newShip =  new Ship();
+            // newShip.id = i;
+            // newShip.tier = element['tier'];
+            // newShip.name = element['name'];
+            // newShip.isSpecial = element['is_special'];
+            // newShip.isPremium = element['is_premium'];
+            // const elementImages = element['images'];
+            // newShip.smallImage = elementImages['small'];
+            console.log(newShip);
+            this.ships.push(newShip);
+            i++;
+          }
         }
-      }
-    });
+      });
+    }
   }
   onUpdateTargetNation(event: Event) {
     this.allowFindShip = ((<HTMLInputElement>event.target).value.length > 0);

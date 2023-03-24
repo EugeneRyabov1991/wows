@@ -4,7 +4,8 @@ export class Ship {
     public code: string = '';
     public name: string  = '';
     public type: string = 'BBB';
-    public is_special: boolean = false;
+    public isSpecial: boolean = false;
+    public isPremium: boolean = false;
     public tier: number = 1;
     public nation: string = 'JPN';
     public smallImage: string = "";

@@ -8,7 +8,7 @@ import { Ship } from './ship.model';
 })
 export class ShipComponent implements OnInit  {
 
-  @Input() ship: Ship;
+  @Input() ship: any;
 
   constructor() { }
 
