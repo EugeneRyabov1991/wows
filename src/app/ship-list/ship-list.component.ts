@@ -62,6 +62,9 @@ export class ShipsComponent implements OnInit {
               'id' : i,
               ...element,
             }
+            if (newShip.images?.small != null) {
+              newShip.images.small = newShip.images.small.replace('icons//', 'icons/');
+            }
               // newShip =  new Ship();
             // newShip.id = i;
             // newShip.tier = element['tier'];
