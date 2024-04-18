@@ -1,10 +1,13 @@
-<div>
-  <div class="row">
-    <div class="col-sm-6">
-      <h3>[{{ ship.id }}] - {{ ship.name }} [lvl: {{ ship.tier }}]</h3>
-    </div>
-    <div class="col-sm-6">
-      <img [src] = "ship.images.small" />
-    </div>
-  </div>
-</div>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>[{{ ship.id }}] - {{ ship.name }}</mat-card-title>
+      <mat-card-subtitle>[lvl: {{ ship.tier }}]</mat-card-subtitle>
+      <img mat-card-sm-image [src]="ship.images.small" >
+    </mat-card-title-group>
+  </mat-card-header>
+<!--  <mat-card-content>-->
+<!--    {{ship.description}}-->
+<!--  </mat-card-content>-->
+</mat-card>

@@ -2,27 +2,21 @@
 
 <form [formGroup]="form">
   <!-- <mat-form-field> -->
-     <input matInput [(ngModel)]="fltNation" formControlName="nation" placeholder="Введите нвцию..."><br/>
-     <input matInput formControlName="level" place  holder="Введите уровень..."><br/>
+     <input matInput formControlName="nation" placeholder="Введите нацию..."><br/>
+     <input matInput formControlName="level" placeholder="Введите уровень..."><br/>
      <!-- <mat-error *ngIf="form.controls.param.errors?.required">Text is required</mat-error> -->
-     <button  mat-flat-button color="primary" (click)="onClickLoadShipList()">Load ship list</button>
+     <button  mat-flat-button color="primary" (click)="onClickLoadShipList('USA')">Load ship list</button>
   <div>{{this.fltNation}}</div>
   <!-- </mat-form-field> -->
-</form>
 
-<!--
-<div>
-   <input type="text" class="form-control" [(ngModel)]="targetNation" (input)="onUpdateTargetNation($event)">
-   <button class="btn btn-primary" (click)="onClickLoadShipList()" [disabled]="!allowFindShip">Load ship list</button>
-</div>
-<hr/>
-<p>{{ shipHeader }}</p>
--->
-
-<div class="row">
-  <div class="col-sm-12">
-    <div class="list-group-item" *ngFor="let ship of ships">
-      <app-ship [ship]="ship" *ngIf="!ship.is_premium && !ship.is_special"></app-ship>
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" (selectedTabChange) = "onChangeNation($event)">
+  <mat-tab *ngFor="let nation of nationList"  [label]="nation.id" >
+    <input type='hidden' formControlName="nation" [(ngModel)]="targetNation" value = "nation.id" ><br/>
+    <div class = 'container grdClass'>
+      <div *ngFor="let ship of ships">
+          <app-ship [ship]="ship"></app-ship>
+        </div>
     </div>
-  </div>
-</div>
+  </mat-tab>
+</mat-tab-group>
+</form>

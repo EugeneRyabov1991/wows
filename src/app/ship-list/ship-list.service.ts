@@ -6,17 +6,26 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class ShipListService {
 //    private url = ` https://api.worldofwarships.ru/wows/encyclopedia/ships/`;
-  private url = `https://api.korabli.su/wows/encyclopedia/ships/`;
+  private urlShips = `https://api.korabli.su/wows/encyclopedia/ships/`;
+  private urlUsers = `https://api.korabli.su/wows/encyclopedia/ships/`;
 
   private urlOptions = `https://api.korabli.su/wows/encyclopedia/info/?fields=774e1e9d18a61e9f385584a1d8705404`;
   constructor(public http: HttpClient) { }
 
   getShipList(params): Observable<Ship[]> {
-    return this.http.get<Ship[]>(`${this.url}`, {params : {
+    return this.http.get<Ship[]>(`${this.urlShips}`, {params : {
         'application_id': '774e1e9d18a61e9f385584a1d8705404',
         ...params
       }});
   }
+
+// ToDo:
+  // getUserList(params): Observable<User[]> {
+  //   return this.http.get<User[]>(`${this.urlUsers}`, {params : {
+  //       'application_id': '774e1e9d18a61e9f385584a1d8705404',
+  //       ...params
+  //     }});
+  //}
 
 }
 

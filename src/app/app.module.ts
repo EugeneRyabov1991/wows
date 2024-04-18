@@ -12,12 +12,14 @@ import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {MatDividerModule} from '@angular/material/divider';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
     AppComponent,
     ShipsComponent,
-    ShipComponent
+    ShipComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    MatTabsModule,
+    MatCardModule,
   ],
   providers: [ShipListService],
   bootstrap: [AppComponent]
