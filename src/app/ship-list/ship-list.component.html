@@ -2,11 +2,10 @@
 
 <form [formGroup]="form">
   <!-- <mat-form-field> -->
-     <input matInput formControlName="nation" placeholder="Введите нацию..."><br/>
-     <input matInput formControlName="level" placeholder="Введите уровень..."><br/>
-     <!-- <mat-error *ngIf="form.controls.param.errors?.required">Text is required</mat-error> -->
-     <button  mat-flat-button color="primary" (click)="onClickLoadShipList('USA')">Load ship list</button>
-  <div>{{this.fltNation}}</div>
+     <input matInput [(ngModel)]="fltUsers" formControlName="nation" placeholder="Введите ник пользователя..."><br/>
+     <button  mat-flat-button color="primary" (click)="onGetUserList()">Find user</button>
+  <div>{{this.fltUsers}}</div>
+  <div>{{this.fltUserId}}</div>
   <!-- </mat-form-field> -->
 
 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" (selectedTabChange) = "onChangeNation($event)">

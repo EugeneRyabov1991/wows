@@ -12,11 +12,14 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class ShipsComponent implements OnInit {
 
   fltNation = "USA";
+  fltUsers = ""
+  fltUserId = 0;
   shipHeader = '';
   targetNation = '';
   allowFindShip = false;
   products: any = [];
   ships: any = [];
+  users: any = [];
   treeShips: any = [];
 
   nationList = [
@@ -61,9 +64,32 @@ export class ShipsComponent implements OnInit {
 
   ngOnInit() {
     this.form = new FormGroup({
-      nation: new FormControl( this.fltNation, { validators: [Validators.required] }),
-      level:  new FormControl(1, { validators: [Validators.required] }),
+      nation: new FormControl( this.fltUsers, { validators: [Validators.required] }),
     });
+  }
+
+  async onGetUserList() {
+    console.log('Get user !');
+    this.users = [];
+    const filter =  {
+      search: this.fltUsers,
+    };
+    let i = 0;
+    const promiseArray : any[] = [];
+
+    promiseArray.push(this.shipListService.getUserList(filter).toPromise());
+
+    const data = await Promise.all(promiseArray);
+    data.forEach( rec => {
+      if (rec.data) {
+        for (const user in rec.data) {
+          console.log(user)
+          this.fltUserId = rec.account_id;
+        }
+      }
+    });
+    console.log(this.fltUserId);
+
   }
 
   async onClickLoadShipList(nation_) {
@@ -104,11 +130,15 @@ export class ShipsComponent implements OnInit {
        }
      }
     })
+    this.ships.sort(function (a, b){
+      return a.tier - b.tier;
+    })
+
     console.log(this.ships.length);
-    //
-    // this.ships.forEach((element) => {
-    //   console.log(element);
-    // });
+
+    this.ships.forEach((element) => {
+      console.log(element);
+    });
   }
 
   onUpdateTargetNation(event: Event) {
