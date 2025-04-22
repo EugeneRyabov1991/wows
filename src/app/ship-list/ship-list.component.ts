@@ -10,10 +10,11 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./ship-list.component.css']
 })
 export class ShipsComponent implements OnInit {
-
   fltNation = "USA";
+  userEnabled = false;
   fltUsers = ""
-  fltUserId = 0;
+  userId = 0;
+  userNickName = '';
   shipHeader = '';
   targetNation = '';
   allowFindShip = false;
@@ -51,6 +52,7 @@ export class ShipsComponent implements OnInit {
   ) { }
 
   // Описание здесь
+  //         https://developers.lesta.ru/
   //         https://developers.wargaming.net/
   //  Текст запроса для поиска кораблей
   //         https://api.worldofwarships.ru/wows/encyclopedia/ships/?application_id=774e1e9d18a61e9f385584a1d8705404&nation=usa
@@ -58,14 +60,16 @@ export class ShipsComponent implements OnInit {
   //  Поиск акаунтов игроков по маске
   //         https://api.korabli.su/wows/account/list/?application_id=774e1e9d18a61e9f385584a1d8705404&search=BaldKeeper
   //  Статка по игроку
-  //         https://api.korabli.su/wows/account/info/?application_id=774e1e9d18a61e9f385584a1d8705404&account_id=82883503&extra=private.port&fields=private.port
+  //         https://api.korabli.su/wows/account/info/?application_id=774e1e9d18a61e9f385584a1d8705404&account_id=82883503&extra=private.port&fields=private.port&access_token=da40742dc4ee92bf910372cde81afb013c5240e1
 
+ //   https://api.korabli.su/wows/account/info/?application_id=774e1e9d18a61e9f385584a1d8705404&account_id=82883503
   form: FormGroup;
 
   ngOnInit() {
     this.form = new FormGroup({
       nation: new FormControl( this.fltUsers, { validators: [Validators.required] }),
     });
+    this.onClickLoadShipList(this.nationList[0].id);
   }
 
   async onGetUserList() {
@@ -75,25 +79,40 @@ export class ShipsComponent implements OnInit {
       search: this.fltUsers,
     };
     let i = 0;
-    const promiseArray : any[] = [];
 
+    const promiseArray : any[] = [];
     promiseArray.push(this.shipListService.getUserList(filter).toPromise());
 
-    const data = await Promise.all(promiseArray);
-    data.forEach( rec => {
-      if (rec.data) {
-        for (const user in rec.data) {
-          console.log(user)
-          this.fltUserId = rec.account_id;
-        }
-      }
-    });
-    console.log(this.fltUserId);
+    this.userEnabled = false;
+    const response = await Promise.all(promiseArray);
+    if ((response.length == 1) && (response[0].status =='ok')){
+      const userList = response[0].data;
+      this.userId = 0;
+      this.userNickName = "";
+      this.userEnabled = false;
+      userList.forEach(user => {
+          if (user.nickname == this.fltUsers) {
+            this.userId = user.account_id;
+            this.userNickName = user.nickname;
+            this.userEnabled = true;
+          }
+      })
+      console.log(userList);
+    }
 
-  }
+    if (this.userEnabled) {
+      const userInfoArray: any[] = [];
+      userInfoArray.push(this.shipListService.getUserInfo(this.userId ).toPromise());
+      const userInfo = await Promise.all(userInfoArray);
+      console.log(userInfo);
+    }
+    // const userInfoArray : any[] = [];
+    // userInfoArray.push(this.shipListService.getUserToken().toPromise());
+    // const userInfo = await Promise.all(userInfoArray);
+   }
 
   async onClickLoadShipList(nation_) {
-    console.log('Go!!!!!!!!!!!');
+ //   console.log('Go!!!!!!!!!!!');
     this.ships = [];
     const filter =  {
       page_no: 5,
@@ -133,20 +152,21 @@ export class ShipsComponent implements OnInit {
     this.ships.sort(function (a, b){
       return a.tier - b.tier;
     })
-
-    console.log(this.ships.length);
-
-    this.ships.forEach((element) => {
-      console.log(element);
-    });
+  //
+  //   console.log(this.ships.length);
+  //
+  //   this.ships.forEach((element) => {
+  //     console.log(element);
+  //   });
   }
 
   onUpdateTargetNation(event: Event) {
     this.allowFindShip = ((<HTMLInputElement>event.target).value.length > 0);
   }
 
-  onChangeNation(event) {
-    this.onClickLoadShipList(event.tab.textLabel)
+  onChangeNation($event) {
+    console.log($event, this.nationList[$event.index]);
+     this.onClickLoadShipList(this.nationList[$event.index].id);
 //    this.onClickLoadShipList(this.targetNation)
     console.log(this.targetNation);
   }

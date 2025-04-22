@@ -3,14 +3,15 @@
 <form [formGroup]="form">
   <!-- <mat-form-field> -->
      <input matInput [(ngModel)]="fltUsers" formControlName="nation" placeholder="Введите ник пользователя..."><br/>
-     <button  mat-flat-button color="primary" (click)="onGetUserList()">Find user</button>
+     <button mat-flat-button color="primary" (click)="onGetUserList()">Find user</button>
   <div>{{this.fltUsers}}</div>
-  <div>{{this.fltUserId}}</div>
+  <div *ngIf = "userEnabled">[{{this.userId}}] - {{this.userNickName}}</div>
+
+
   <!-- </mat-form-field> -->
 
 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" (selectedTabChange) = "onChangeNation($event)">
-  <mat-tab *ngFor="let nation of nationList"  [label]="nation.id" >
-    <input type='hidden' formControlName="nation" [(ngModel)]="targetNation" value = "nation.id" ><br/>
+  <mat-tab *ngFor="let nation of nationList"  [label]="nation.name">
     <div class = 'container grdClass'>
       <div *ngFor="let ship of ships">
           <app-ship [ship]="ship"></app-ship>
